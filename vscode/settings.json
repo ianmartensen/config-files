@@ -1,0 +1,117 @@
+{
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "editor.rulers": [
+        100
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#78787834"
+    },
+    "editor.overviewRulerBorder": false,
+    "python.analysis.extraPaths": [],
+    "workbench.editor.labelFormat": "short",
+    "breadcrumbs.enabled": false,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontSize": 14,
+    "editor.fontWeight": 400,
+    "editor.fontLigatures": false,
+    "terminal.integrated.fontSize": 13,
+    "editor.minimap.enabled": false,
+    "explorer.compactFolders": false,
+    "terminal.integrated.lineHeight": 1.2,
+    "notebook.lineNumbers": "on",
+    "notebook.output.fontSize": 10,
+    "notebook.diff.overviewRuler": true,
+    "window.zoomLevel": 2,
+    "workbench.iconTheme": "material-icon-them",
+    "workbench.tree.indent": 20,
+    "editor.scrollBeyondLastLine": false,
+    "editor.lineNumbers": "relative",
+    "editor.tokenColorCustomizations": {
+        "comments": "#FF0000"
+    },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "after": [
+                "<C-d>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<C-u>"
+            ],
+            "after": [
+                "<C-u>",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                "p"
+            ],
+            "after": [
+                "P"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-z>": true,
+        "<C-a>": true,
+        "<C-f>": true,
+        "<C-e>": false
+    },
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "explorer.copyRelativePathSeparator": "/",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.hovers.enabled": false,
+    "gitlens.heatmap.locations": [
+        "overview"
+    ],
+    "gitlens.heatmap.fadeLines": false,
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "default"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnknownArgumentType": "none",
+        "reportUnknownVariableType": "none",
+        "reportUnknownParameterType": "none",
+        "reportUnknownMemberType": "none",
+        "reportMissingTypeStubs": "none"
+    }
+}
