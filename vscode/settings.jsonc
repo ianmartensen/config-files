@@ -1,0 +1,239 @@
+{
+  // "[python]": {
+  //     "editor.formatOnSave": true,
+  //     "editor.formatOnSaveMode": "modificationsIfAvailable",
+  //     "editor.defaultFormatter": "charliermarsh.ruff",
+  //     "editor.codeActionsOnSave": {"source.organizeImports": "explicit"},
+  //     "diffEditor.ignoreTrimWhitespace": false
+  // },
+  "notebook.formatOnSave.enabled": true,
+  "editor.rulers": [100],
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#353535aa",
+  },
+  "python.analysis.extraPaths": [],
+
+  "workbench.editor.labelFormat": "short",
+  "diffEditor.experimental.useTrueInlineView": true,
+
+  "editor.fontFamily": "'Monaspace Argon SemiWide', monospace",
+  "editor.fontWeight": 300,
+  // Font ligatures & modifications
+  // cv10 => Alternate i / l
+  // cv30 => Vertical align *
+  // cv02 => Alternate 1
+  "editor.fontLigatures": "'calt', 'cv30', 'cv02'",
+  "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
+
+  "editor.guides.indentation": true,
+
+  // font sizing info
+  "window.zoomLevel": 2,
+  "editor.fontSize": 14,
+
+  // presentation mode
+  // "window.zoomLevel": 4,
+  // "editor.fontSize": 10,
+
+  "terminal.integrated.fontSize": 9,
+
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
+  "editor.lineNumbers": "relative",
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabSizing": "fixed",
+
+  "explorer.compactFolders": false,
+  "editor.minimap.showSlider": "always",
+  "terminal.integrated.lineHeight": 0,
+
+  // .ipynb settings
+  "notebook.lineNumbers": "on",
+  "notebook.output.fontSize": 8,
+  "notebook.diff.overviewRuler": true,
+  // "debug.console.lineHeight": 1, // using this value breaks the Databricks extension return value from cell runs
+
+  "workbench.tree.indent": 30,
+
+  // Vim configurations
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"],
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"],
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z"],
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z"],
+    },
+    // Wrap current word in quotes
+    {
+      "before": ["<leader>", "w"],
+      "after": ["c", "i", "w", "\"", "C-r", "\"", "\"", "<Esc>"],
+    },
+    // Wrap current word in 'CAST(... AS STRING)'
+    {
+      "before": ["<leader>", "c"],
+      "after": [
+        "c",
+        "i",
+        "w",
+        "C",
+        "A",
+        "S",
+        "T",
+        "(",
+        "C-r",
+        "\"",
+        " ",
+        "A",
+        "S",
+        " ",
+        "S",
+        "T",
+        "R",
+        "I",
+        "N",
+        "G",
+        ")",
+        "<Esc>",
+      ],
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["p"],
+      "after": ["P"],
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"],
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"],
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": true,
+    "<C-z>": true,
+    "<C-e>": false,
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+  },
+  // "gitlens.codeLens.enabled": false,
+  // "gitlens.hovers.enabled": false,
+  // "gitlens.heatmap.locations": [
+  //     "overview"
+  // ],
+  // "gitlens.heatmap.fadeLines": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default",
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportUnknownVariableType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportUnknownParameterType": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownLambdaType": "none",
+    "reportMissingTypeStubs": "none",
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "jupyter.askForKernelRestart": false,
+  // "vim.highlightedyank.enable": true,
+  // "vim.highlightedyank.color": "rgba(210, 210, 210, 0.3)",
+  // "vim.highlightedyank.color": "rgba(250, 240, 170, 0.075)",
+  // "vim.highlightedyank.duration": 100,
+  "explorer.copyRelativePathSeparator": "/",
+  "vim.smartRelativeLine": true,
+  "terminal.integrated.cursorBlinking": true,
+  "window.title": "${dirty}${rootName}${separator}${activeEditorMedium}",
+  "workbench.editor.wrapTabs": false,
+  "workbench.editor.enablePreview": false,
+  // "editor.autoClosingBrackets": "never"
+  "window.newWindowDimensions": "maximized",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  // "gitlens.currentLine.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.overviewRulerBorder": false,
+  "notebook.outline.showCodeCellSymbols": false,
+  "notebook.outline.showMarkdownHeadersOnly": false,
+  "notebook.scrolling.revealNextCellOnExecute": "none",
+  "jupyter.interactiveWindow.cellMarker.decorateCells": "None",
+
+  // disable databricks running
+  "editor.renderLineHighlight": "none",
+  "jupyter.interactiveWindow.codeLens.enable": false,
+  "editor.detectIndentation": false,
+  "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "off",
+  "editor.guides.highlightActiveIndentation": false,
+
+  "window.titleBarStyle": "custom",
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "chat.commandCenter.enabled": false,
+  "editor.renderWhitespace": "none",
+  "workbench.editor.centeredLayoutAutoResize": false,
+  "editor.accessibilitySupport": "off",
+  "workbench.navigationControl.enabled": false,
+  "workbench.editor.empty.hint": "hidden",
+  "editor.lightbulb.enabled": "off",
+  "breadcrumbs.enabled": false,
+  "editor.cursorBlinking": "solid",
+  "workbench.editor.tabSizingFixedMaxWidth": 160,
+  "workbench.editor.tabSizingFixedMinWidth": 160,
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiBlack",
+  "editor.stickyScroll.enabled": false,
+  "workbench.editor.limit.value": 5,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.externalBrowser": "edge",
+  "workbench.editor.autoLockGroups": {
+    "workbench.editor.chatSession": false,
+  },
+  "editor.inlayHints.fontFamily": "'Monaspace Krypton', monospace",
+  "debug.console.fontFamily": "'Monaspace Krypton', monospace",
+  "terminal.integrated.fontFamily": "'Monaspace Krypton', monospace",
+  "notebook.markup.fontFamily": "'Monaspace Argon', monospace",
+  "window.commandCenter": false,
+  "editor.hover.sticky": false,
+  "editor.stickyScroll.scrollWithEditor": false,
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.activityBar.location": "bottom",
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.density.editorTabHeight": "compact",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+  },
+  "azureResourceGroups.groupBy": "resourceGroup",
+  "python.defaultInterpreterPath": "C:\\Users\\imartensen\\astrana_health\\repos\\constellation\\main\\.venv",
+  "scm.repositories.selectionMode": "single",
+  "workbench.colorTheme": "Dark Modern",
+}
