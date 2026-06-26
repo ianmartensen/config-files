@@ -13,8 +13,8 @@
     "favorite_models": [],
     "model_parameters": [],
   },
-  "diff_view_style": "unified",
-  "text_rendering_mode": "subpixel",
+  "diff_view_style": "split",
+  "text_rendering_mode": "platform_default",
   "remove_trailing_whitespace_on_save": false,
   "vim": {
     "use_system_clipboard": "never",
@@ -37,7 +37,7 @@
     "dock": "left",
     "git_status": true,
     "file_icons": true,
-    "default_width": 600,
+    "default_width": 800,
   },
   "bottom_dock_layout": "contained",
   "preview_tabs": {
@@ -111,29 +111,30 @@
   // "hard_tabs": false,
   // "tab_size": 4,
   "cursor_blink": false,
-  // "ui_font_family": "Monaspace Neon",
-  "buffer_line_height": { "custom": 1.35 },
-  // "buffer_line_height": "standard",
+  "ui_font_family": "Monaspace Neon",
+  "ui_font_size": 20.0,
+  "buffer_line_height": "standard",
   "buffer_font_weight": 400,
   "vim_mode": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false,
   },
-  "line_ending": "enforce_crlf",
-  "ui_font_size": 22.0,
+  // "line_ending": "enforce_crlf",
   "buffer_font_size": 18.0,
   "buffer_font_family": "Fira Code",
   // "buffer_font_family": "Monaspace Argon",
   // "buffer_font_family": "Monaspace Neon",
+
   // Fira Code
   "buffer_font_features": {
-    "calt": false, // Ligatures enable/disable
+    "calt": true, // Ligatures enable/disable
     // "cv01": 2, // Alternate style - a
     "ligatures": false,
     "ss03": true, // Alternate style - &
     "ss05": true, // Alternate style - @
   },
+
   // Monaspace Argon
   // "buffer_font_features": {
   //   "calt": false, // Texture healing
@@ -160,7 +161,7 @@
   //   // "ss02": true, // set ==, !=, === ligatures
   //   "cv32": false, // Alternate style * >=
   // },
-  "theme": "VSCode Dark Polished",
+  "theme": "VSCode Dark Modern",
   "restore_on_startup": "last_session",
   "auto_update": true,
   "base_keymap": "VSCode",
@@ -188,17 +189,17 @@
     "folder_icons": true,
     "entry_spacing": "comfortable",
     "hide_gitignore": false,
-    "default_width": 500,
+    "default_width": 800,
     "file_icons": true,
     "dock": "left",
   },
   "git_panel": {
     "dock": "left",
-    "tree_view": false,
+    "tree_view": true,
     "sort_by_path": false,
     "collapse_untracked_diff": false,
     "status_style": "icon",
-    "default_width": 500,
+    "default_width": 450,
   },
   "use_auto_surround": true,
   "active_pane_modifiers": { "inactive_opacity": 0.5 },
@@ -217,7 +218,7 @@
     },
   },
   //   // APPEARANCE ------------------------------------------------------------------------------
-  "icon_theme": "Zed (Default)",
+  "icon_theme": "Catppuccin Frappé",
   "wrap_guides": [100],
   // THEME
   "theme_overrides": {
@@ -389,8 +390,7 @@
       "language_servers": [
         // use the default configuration.
         "ruff",
-        "pyright",
-        "!pyrefly",
+        "pyrefly",
         "!pyright",
         "!pylsp",
       ],
@@ -403,45 +403,44 @@
     },
   },
   "lsp": {
-    // "pyrefly": {
-    //   "binary": {
-    //     "path": "/Users/imartensen/.local/bin/pyrefly",
-    //     "arguments": ["lsp"],
-    //   },
-    //   "settings": {
-    //     "python": {
-    //       // "pythonPath": ".venv/bin/python",
-    //       "pythonPath": ".venv\\Scripts\\python.exe", // Windows
-    //     },
-    //     "pyrefly": {
-    //       "search_path": ["packages/pulse"],
-    //       "project_includes": ["."],
-    //       "project_excludes": ["**/__pycache__", "**/node_modules", "typings/__builtins__.pyi"],
-    //       // "search_path": ["./typings"],
-    //       "ignore_errors_in_generated_code": true,
-    //       "site_package_path": ["./typings"],
-    //       "infer_with_first_use": false,
-    //       "enabled_ignores": ["type", "pyrefly", "pyright"],
-    //       "python_version": "3.12.*",
-    //     },
-    //   },
-    // },
-    "pyright": {
+    "pyrefly": {
+      "binary": {
+        "path": "/Users/ian.martensen/.local/bin/pyrefly",
+        "arguments": ["lsp"],
+      },
       "settings": {
         "python": {
-          "analysis": {
-            "typeCheckingMode": "standard",
-            "autoSearchPaths": true,
-            "useLibraryCodeForTypes": true,
-            "diagnosticMode": "openFilesOnly",
-            "diagnosticSeverityOverrides": {
-              "reportMissingTypeStubs": "warning",
-              "reportUnknownVariableType": "information",
-            },
-          },
+          "pythonPath": ".venv/bin/python",
+        },
+        "pyrefly": {
+          "search_path": ["packages/pulse"],
+          "project_includes": ["."],
+          "project_excludes": ["**/__pycache__", "**/node_modules", "typings/__builtins__.pyi"],
+          // "search_path": ["./typings"],
+          "ignore_errors_in_generated_code": true,
+          "site_package_path": ["./typings"],
+          "infer_with_first_use": false,
+          "enabled_ignores": ["type", "pyrefly", "pyright"],
+          "python_version": "3.12.*",
         },
       },
     },
+    // "pyright": {
+    //   "settings": {
+    //     "python": {
+    //       "analysis": {
+    //         "typeCheckingMode": "standard",
+    //         "autoSearchPaths": true,
+    //         "useLibraryCodeForTypes": true,
+    //         "diagnosticMode": "openFilesOnly",
+    //         "diagnosticSeverityOverrides": {
+    //           "reportMissingTypeStubs": "warning",
+    //           "reportUnknownVariableType": "information",
+    //         },
+    //       },
+    //     },
+    //   },
+    // },
   },
   // "lsp": {
   //   "pyright": {
@@ -504,5 +503,4 @@
   //       "language_servers": ["ruff", "basedpyright", "!pyright"]
   //     }
   //   }
-  // }
 }
